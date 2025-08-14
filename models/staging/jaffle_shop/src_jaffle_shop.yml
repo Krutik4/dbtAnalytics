@@ -1,0 +1,15 @@
+version : 2
+
+sources :
+  - name: jaffle_shop
+    database: workspace
+    schema: default
+    tables:
+      - name: jaffle_shop_customers
+        freshness: null
+      
+      - name: jaffle_shop_orders
+        # loaded_at_field: order_date
+        # freshness:
+        #   warn_after: {count: 12, period: hour}
+        #   error_after: {count: 24, period: hour}
